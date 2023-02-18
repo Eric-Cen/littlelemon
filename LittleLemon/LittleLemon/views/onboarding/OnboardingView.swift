@@ -6,8 +6,10 @@ let kEmail = "email key"
 
 struct OnboardingView: View {
     
+    @State private var isLoggedIn = false
+    
     @State private var showInvalidInputAlert = false
-    @State var errorMessage = ""
+    @State private var errorMessage = ""
     
     @State private var firstName: String = ""
     @State private var lastName: String = ""
@@ -17,6 +19,9 @@ struct OnboardingView: View {
         NavigationView {
             ScrollView {
                 VStack {
+                    NavigationLink(destination: Home(), isActive: $isLoggedIn) {
+                        EmptyView()
+                    }
                     HeroSection()
                     TextFieldWithBorder(
                         textLabel: "First Name *",
@@ -39,6 +44,7 @@ struct OnboardingView: View {
                             UserDefaults.standard.set(firstName, forKey: kFirstName)
                             UserDefaults.standard.set(lastName, forKey: kLastName)
                             UserDefaults.standard.set(email, forKey: kEmail)
+                            isLoggedIn = true
                         } else {
                             showInvalidInputAlert.toggle()
                         }

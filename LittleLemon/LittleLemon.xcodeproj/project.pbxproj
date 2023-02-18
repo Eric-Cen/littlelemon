@@ -26,6 +26,7 @@
 		079428D129A07BC1007FD809 /* HeroSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079428D029A07BC1007FD809 /* HeroSection.swift */; };
 		079428D329A09632007FD809 /* MenuItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079428D229A09632007FD809 /* MenuItemRowView.swift */; };
 		079428D529A09B51007FD809 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079428D429A09B51007FD809 /* MenuView.swift */; };
+		079428D829A16558007FD809 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079428D729A16558007FD809 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		079428D229A09632007FD809 /* MenuItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemRowView.swift; sourceTree = "<group>"; };
 		079428D429A09B51007FD809 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		079428D629A15068007FD809 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		079428D729A16558007FD809 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				079428C2299FDF37007FD809 /* menu */,
 				079428C0299FDEF8007FD809 /* profile */,
 				079428BF299FDEEB007FD809 /* onboarding */,
+				079428D729A16558007FD809 /* Home.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				0794289A299C9792007FD809 /* LittleLemon.xcdatamodeld in Sources */,
 				079428CD29A06D27007FD809 /* LittleLemonTitleBar.swift in Sources */,
 				079428CB29A04086007FD809 /* TextFieldWithBorder.swift in Sources */,
+				079428D829A16558007FD809 /* Home.swift in Sources */,
 				079428D529A09B51007FD809 /* MenuView.swift in Sources */,
 				079428BD299E80A2007FD809 /* OnboardingView.swift in Sources */,
 				079428D129A07BC1007FD809 /* HeroSection.swift in Sources */,

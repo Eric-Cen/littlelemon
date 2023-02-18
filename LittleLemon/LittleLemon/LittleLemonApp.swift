@@ -1,10 +1,3 @@
-//
-//  LittleLemonApp.swift
-//  LittleLemon
-//
-//  Created by Eric Cen on 2/14/23.
-//
-
 import SwiftUI
 
 @main

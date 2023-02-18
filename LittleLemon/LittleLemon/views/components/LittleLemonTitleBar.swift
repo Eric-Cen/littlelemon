@@ -1,10 +1,3 @@
-//
-//  LittleLemonTitleBar.swift
-//  LittleLemon
-//
-//  Created by Eric Cen on 2/17/23.
-//
-
 import SwiftUI
 
 struct LittleLemonTitleBar: View {

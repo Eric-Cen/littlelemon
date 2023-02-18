@@ -16,6 +16,16 @@
 		079428A4299C9792007FD809 /* LittleLemonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079428A3299C9792007FD809 /* LittleLemonTests.swift */; };
 		079428AE299C9792007FD809 /* LittleLemonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079428AD299C9792007FD809 /* LittleLemonUITests.swift */; };
 		079428B0299C9792007FD809 /* LittleLemonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079428AF299C9792007FD809 /* LittleLemonUITestsLaunchTests.swift */; };
+		079428BD299E80A2007FD809 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079428BC299E80A2007FD809 /* OnboardingView.swift */; };
+		079428C5299FE034007FD809 /* ButtonWithBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079428C4299FE034007FD809 /* ButtonWithBorder.swift */; };
+		079428C7299FF2D1007FD809 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079428C6299FF2D1007FD809 /* CustomColor.swift */; };
+		079428C9299FF4D9007FD809 /* ButtonWithFilledColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079428C8299FF4D9007FD809 /* ButtonWithFilledColor.swift */; };
+		079428CB29A04086007FD809 /* TextFieldWithBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079428CA29A04086007FD809 /* TextFieldWithBorder.swift */; };
+		079428CD29A06D27007FD809 /* LittleLemonTitleBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079428CC29A06D27007FD809 /* LittleLemonTitleBar.swift */; };
+		079428CF29A073B0007FD809 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079428CE29A073B0007FD809 /* ProfileView.swift */; };
+		079428D129A07BC1007FD809 /* HeroSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079428D029A07BC1007FD809 /* HeroSection.swift */; };
+		079428D329A09632007FD809 /* MenuItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079428D229A09632007FD809 /* MenuItemRowView.swift */; };
+		079428D529A09B51007FD809 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079428D429A09B51007FD809 /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +58,17 @@
 		079428A9299C9792007FD809 /* LittleLemonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LittleLemonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		079428AD299C9792007FD809 /* LittleLemonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonUITests.swift; sourceTree = "<group>"; };
 		079428AF299C9792007FD809 /* LittleLemonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		079428BC299E80A2007FD809 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		079428C4299FE034007FD809 /* ButtonWithBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithBorder.swift; sourceTree = "<group>"; };
+		079428C6299FF2D1007FD809 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
+		079428C8299FF4D9007FD809 /* ButtonWithFilledColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithFilledColor.swift; sourceTree = "<group>"; };
+		079428CA29A04086007FD809 /* TextFieldWithBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithBorder.swift; sourceTree = "<group>"; };
+		079428CC29A06D27007FD809 /* LittleLemonTitleBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonTitleBar.swift; sourceTree = "<group>"; };
+		079428CE29A073B0007FD809 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		079428D029A07BC1007FD809 /* HeroSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroSection.swift; sourceTree = "<group>"; };
+		079428D229A09632007FD809 /* MenuItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemRowView.swift; sourceTree = "<group>"; };
+		079428D429A09B51007FD809 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		079428D629A15068007FD809 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,12 +119,14 @@
 		0794288C299C9790007FD809 /* LittleLemon */ = {
 			isa = PBXGroup;
 			children = (
+				079428D629A15068007FD809 /* Info.plist */,
+				079428BE299FDEDF007FD809 /* views */,
 				0794288D299C9790007FD809 /* LittleLemonApp.swift */,
-				0794288F299C9790007FD809 /* ContentView.swift */,
 				07942891299C9792007FD809 /* Assets.xcassets */,
 				07942896299C9792007FD809 /* Persistence.swift */,
 				07942898299C9792007FD809 /* LittleLemon.xcdatamodeld */,
 				07942893299C9792007FD809 /* Preview Content */,
+				079428C6299FF2D1007FD809 /* CustomColor.swift */,
 			);
 			path = LittleLemon;
 			sourceTree = "<group>";
@@ -131,6 +154,55 @@
 				079428AF299C9792007FD809 /* LittleLemonUITestsLaunchTests.swift */,
 			);
 			path = LittleLemonUITests;
+			sourceTree = "<group>";
+		};
+		079428BE299FDEDF007FD809 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				0794288F299C9790007FD809 /* ContentView.swift */,
+				079428C3299FDF42007FD809 /* components */,
+				079428C2299FDF37007FD809 /* menu */,
+				079428C0299FDEF8007FD809 /* profile */,
+				079428BF299FDEEB007FD809 /* onboarding */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		079428BF299FDEEB007FD809 /* onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				079428BC299E80A2007FD809 /* OnboardingView.swift */,
+			);
+			path = onboarding;
+			sourceTree = "<group>";
+		};
+		079428C0299FDEF8007FD809 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				079428CE29A073B0007FD809 /* ProfileView.swift */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		079428C2299FDF37007FD809 /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				079428D229A09632007FD809 /* MenuItemRowView.swift */,
+				079428D429A09B51007FD809 /* MenuView.swift */,
+			);
+			path = menu;
+			sourceTree = "<group>";
+		};
+		079428C3299FDF42007FD809 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				079428C4299FE034007FD809 /* ButtonWithBorder.swift */,
+				079428C8299FF4D9007FD809 /* ButtonWithFilledColor.swift */,
+				079428CA29A04086007FD809 /* TextFieldWithBorder.swift */,
+				079428CC29A06D27007FD809 /* LittleLemonTitleBar.swift */,
+				079428D029A07BC1007FD809 /* HeroSection.swift */,
+			);
+			path = components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,8 +336,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				07942897299C9792007FD809 /* Persistence.swift in Sources */,
+				079428D329A09632007FD809 /* MenuItemRowView.swift in Sources */,
+				079428C7299FF2D1007FD809 /* CustomColor.swift in Sources */,
+				079428C5299FE034007FD809 /* ButtonWithBorder.swift in Sources */,
 				0794289A299C9792007FD809 /* LittleLemon.xcdatamodeld in Sources */,
+				079428CD29A06D27007FD809 /* LittleLemonTitleBar.swift in Sources */,
+				079428CB29A04086007FD809 /* TextFieldWithBorder.swift in Sources */,
+				079428D529A09B51007FD809 /* MenuView.swift in Sources */,
+				079428BD299E80A2007FD809 /* OnboardingView.swift in Sources */,
+				079428D129A07BC1007FD809 /* HeroSection.swift in Sources */,
+				079428C9299FF4D9007FD809 /* ButtonWithFilledColor.swift in Sources */,
 				07942890299C9790007FD809 /* ContentView.swift in Sources */,
+				079428CF29A073B0007FD809 /* ProfileView.swift in Sources */,
 				0794288E299C9790007FD809 /* LittleLemonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,13 +507,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LittleLemon/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = LittleLemon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,13 +537,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LittleLemon/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = LittleLemon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

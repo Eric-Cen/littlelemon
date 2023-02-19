@@ -5,15 +5,15 @@ struct ButtonWithFilledColor: View {
     let label: String
     let backgroundColor: Color = CustomColor.darkGreen
     let textColor: Color = Color.white
-    let cornerRadius: CGFloat = 12
-    let action: () -> Void = {}
+    let cornerRadius: CGFloat = 8
+    let action: () -> Void
     
     var body: some View {
         Button(action: action) {
             Text(label)
-                .font(.title)
+                .font(.system(size: 16, weight: .bold))
                 .foregroundColor(textColor)
-                .padding()
+                .padding(EdgeInsets(top: 12, leading: 16, bottom: 12, trailing: 12))
                 .background(backgroundColor)
                 .cornerRadius(cornerRadius)
         }
@@ -22,6 +22,6 @@ struct ButtonWithFilledColor: View {
 
 struct ButtonWithFilledColor_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonWithFilledColor(label: "Save changes")
+        ButtonWithFilledColor(label: "Save changes", action: {})
     }
 }

@@ -9,7 +9,7 @@ struct Home: View {
                 })
             ProfileView()
                 .tabItem({
-                    Label("Profile", systemImage: "person.crop.circle")
+                    Label("Profile", systemImage: "square.and.pencil")
                 })
         }.navigationBarBackButtonHidden(true)
     }

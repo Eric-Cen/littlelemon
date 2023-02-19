@@ -1,9 +1,5 @@
 import SwiftUI
 
-let kFirstName = "first name key"
-let kLastName = "last name key"
-let kEmail = "email key"
-
 struct OnboardingView: View {
     
     @State private var isLoggedIn = false
@@ -23,21 +19,7 @@ struct OnboardingView: View {
                         EmptyView()
                     }
                     HeroSection()
-                    TextFieldWithBorder(
-                        textLabel: "First Name *",
-                        textFieldLabel: "Enter your first name",
-                        textInput: $firstName)
-                    .padding(EdgeInsets(top: 0, leading: 24, bottom: 0, trailing: 24))
-                    TextFieldWithBorder(
-                        textLabel: "Last Name *",
-                        textFieldLabel: "Enter your last name",
-                        textInput: $lastName)
-                    .padding(EdgeInsets(top: 0, leading: 24, bottom: 0, trailing: 24))
-                    TextFieldWithBorder(
-                        textLabel: "Email *",
-                        textFieldLabel: "Enter your email address",
-                        textInput: $email)
-                    .padding(EdgeInsets(top: 0, leading: 24, bottom: 0, trailing: 24))
+                    textInputSection
                     
                     Button(action: {
                         if validateForm() {
@@ -73,6 +55,30 @@ struct OnboardingView: View {
             isPresented: $showInvalidInputAlert
         ) {
             Button("OK", role: .cancel) {}
+        }.navigationBarBackButtonHidden(true)
+            
+        .onAppear {
+                isLoggedIn = getLoginStatus()
+            }
+    }
+    
+    var textInputSection: some View {
+        Group {
+            TextFieldWithBorder(
+                textLabel: "First Name *",
+                textFieldLabel: "Enter your first name",
+                textInput: $firstName)
+            .padding(EdgeInsets(top: 0, leading: 24, bottom: 0, trailing: 24))
+            TextFieldWithBorder(
+                textLabel: "Last Name *",
+                textFieldLabel: "Enter your last name",
+                textInput: $lastName)
+            .padding(EdgeInsets(top: 0, leading: 24, bottom: 0, trailing: 24))
+            TextFieldWithBorder(
+                textLabel: "Email *",
+                textFieldLabel: "Enter your email address",
+                textInput: $email)
+            .padding(EdgeInsets(top: 0, leading: 24, bottom: 0, trailing: 24))
         }
     }
     
@@ -123,6 +129,19 @@ struct OnboardingView: View {
         let emailValidationRegex = "^[\\p{L}0-9!#$%&'*+\\/=?^_`{|}~-][\\p{L}0-9.!#$%&'*+\\/=?^_`{|}~-]{0,63}@[\\p{L}0-9-]+(?:\\.[\\p{L}0-9-]{2,7})*$"
         let emailValidationPredicate = NSPredicate(format: "SELF MATCHES %@", emailValidationRegex)
         return emailValidationPredicate.evaluate(with: email)
+    }
+    
+    private func getLoginStatus() -> Bool {
+        let defaults = UserDefaults.standard
+        let savedFirstName = defaults.string(forKey: kFirstName) ?? ""
+        let savedLastName = defaults.string(forKey: kLastName) ?? ""
+        let savedEmail = defaults.string(forKey: kEmail) ?? ""
+        
+        if savedLastName.isEmpty || savedFirstName.isEmpty || savedEmail.isEmpty {
+            return false
+        } else {
+            return true
+        }
     }
 }
 

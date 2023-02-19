@@ -9,7 +9,7 @@ struct MenuView: View {
                     HStack() {
                         Spacer()
                         NavigationLink(destination: ProfileView()) {
-                            Image("Profile")
+                            Image("profile-image-placeholder")
                                 .resizable()
                                 .frame(width: 50, height: 50)
                                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 24))

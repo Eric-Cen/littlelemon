@@ -27,6 +27,7 @@
 		079428D329A09632007FD809 /* MenuItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079428D229A09632007FD809 /* MenuItemRowView.swift */; };
 		079428D529A09B51007FD809 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079428D429A09B51007FD809 /* MenuView.swift */; };
 		079428D829A16558007FD809 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079428D729A16558007FD809 /* Home.swift */; };
+		07CDEAC729A186C100F72CC6 /* CheckboxWithLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDEAC629A186C100F72CC6 /* CheckboxWithLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		079428D429A09B51007FD809 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		079428D629A15068007FD809 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		079428D729A16558007FD809 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		07CDEAC629A186C100F72CC6 /* CheckboxWithLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxWithLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 				079428CA29A04086007FD809 /* TextFieldWithBorder.swift */,
 				079428CC29A06D27007FD809 /* LittleLemonTitleBar.swift */,
 				079428D029A07BC1007FD809 /* HeroSection.swift */,
+				07CDEAC629A186C100F72CC6 /* CheckboxWithLabel.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				079428C7299FF2D1007FD809 /* CustomColor.swift in Sources */,
 				079428C5299FE034007FD809 /* ButtonWithBorder.swift in Sources */,
 				0794289A299C9792007FD809 /* LittleLemon.xcdatamodeld in Sources */,
+				07CDEAC729A186C100F72CC6 /* CheckboxWithLabel.swift in Sources */,
 				079428CD29A06D27007FD809 /* LittleLemonTitleBar.swift in Sources */,
 				079428CB29A04086007FD809 /* TextFieldWithBorder.swift in Sources */,
 				079428D829A16558007FD809 /* Home.swift in Sources */,

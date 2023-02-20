@@ -7,7 +7,7 @@ struct TextFieldWithBorder: View {
     
     var body: some View {
         VStack(alignment: HorizontalAlignment.leading) {
-            Text(textLabel)
+            Text(textLabel).foregroundColor(CustomColor.darkGreen)
             TextField(textFieldLabel, text: textInput)
             // option 1:
             // .padding()
@@ -18,7 +18,7 @@ struct TextFieldWithBorder: View {
                 .padding(EdgeInsets(top: 0, leading: 6, bottom: 0, trailing: 6))
                 .cornerRadius(5)
                 .overlay(RoundedRectangle(cornerRadius: 5).stroke(lineWidth: 1))
-        }//.padding()
+        }
     }
 }
 

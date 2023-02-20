@@ -7,7 +7,6 @@ struct CheckboxWithLabel: View {
     var body: some View {
         Button(action: {
             self.isChecked = !self.isChecked
-            print("State : \(self.isChecked)")
         }) {
             HStack(alignment: .center, spacing: 10) {
                 ZStack {

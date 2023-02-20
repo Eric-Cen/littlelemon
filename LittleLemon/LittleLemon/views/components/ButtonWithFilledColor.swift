@@ -3,9 +3,9 @@ import SwiftUI
 struct ButtonWithFilledColor: View {
     
     let label: String
-    let backgroundColor: Color = CustomColor.darkGreen
-    let textColor: Color = Color.white
-    let cornerRadius: CGFloat = 8
+    let backgroundColor: Color
+    let textColor: Color
+    let cornerRadius: CGFloat
     let action: () -> Void
     
     var body: some View {
@@ -22,6 +22,11 @@ struct ButtonWithFilledColor: View {
 
 struct ButtonWithFilledColor_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonWithFilledColor(label: "Save changes", action: {})
+        ButtonWithFilledColor(
+            label: "Save changes",
+            backgroundColor: CustomColor.darkGreen,
+            textColor: Color.white,
+            cornerRadius: 8,
+            action: {})
     }
 }

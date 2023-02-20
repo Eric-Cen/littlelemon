@@ -2,13 +2,13 @@ import SwiftUI
 
 struct ButtonWithBorder: View {
     let label: String
+    let action: () -> Void
+    
     let backgroundColor: Color = Color.white
     let textColor: Color = CustomColor.darkGreen
     let borderStrokeColor: Color = CustomColor.darkGreen
     let cornerRadius: CGFloat = 8
     let borderStrokeWidth: CGFloat = 2
-    let action: () -> Void
-    
     
     var body: some View {
         Button(action: action) {

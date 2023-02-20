@@ -56,7 +56,7 @@ struct ProfileView: View {
                     Image("profile-image-placeholder")
                         .resizable()
                         .scaledToFill()
-                        .frame(width: 40, height: 40)
+                        .frame(width: 50, height: 50)
                         .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 24))
                 }
             }
@@ -75,8 +75,13 @@ struct ProfileView: View {
                     .scaledToFill()
                     .frame(width: 100, height: 100)
                     .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
-                ButtonWithFilledColor(label: "Change", action: {})
-                    .padding(EdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 8))
+                ButtonWithFilledColor(
+                    label: "Change",
+                    backgroundColor: CustomColor.darkGreen,
+                    textColor: Color.white,
+                    cornerRadius: 8,
+                    action: {})
+                .padding(EdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 8))
                 ButtonWithBorder(label: "Remove", action: {})
                 Spacer()
             }
@@ -149,9 +154,14 @@ struct ProfileView: View {
                     loadUserData()
                 })
                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 24))
-                ButtonWithFilledColor(label: "Save changes", action: {
+                ButtonWithFilledColor(
+                    label: "Save changes",
+                    backgroundColor: CustomColor.darkGreen,
+                    textColor: Color.white,
+                    cornerRadius: 8
+                ) {
                     saveUserData()
-                })
+                }
             }
         }
     }
